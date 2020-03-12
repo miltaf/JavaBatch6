@@ -1,5 +1,5 @@
 package com.syntax.class10;
 
-public class GitClass {
+public class Test1 {
 
 }
