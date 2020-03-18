@@ -15,6 +15,22 @@ public class Largest {
 		}
 		}
 		System.out.println("Largest num is "+ largest);
+
+		int[][] a = {
+				{5,2,3,7},
+				{1,5,1,1},
+				{8,3,1,2}
+			};
+	int highest = a[0][0];
+	for (int i=0; i<a.length; i++) {
+	for  (int y=0; y<a[i].length;y++){
+				if (a[i][y]>highest) {
+					highest=a[i][y];
+	}
+	}
+	}
+	System.out.println(highest);
+	
 	}
 
 }

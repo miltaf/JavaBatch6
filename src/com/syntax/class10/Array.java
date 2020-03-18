@@ -21,6 +21,11 @@ public class Array {
 	System.out.println("I moved to "+cities[x]);
 	
 	System.out.println("----------------------------");
+
+	  char[] alpha={'s', 'a', 'y', 'b', 'n', 'c', 't', 'd', 'a', 'e', 'x'};
+
+	System.out.print(alpha [0], alpha [2]; alpha [4]; alpha [6]; alpha [8]; alpha [10]);
+
 	
 	//how many elements stored inside an array?
 	int arraySize=cities.length;

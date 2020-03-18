@@ -40,7 +40,12 @@ public class TwoDimensionalArrays {
 			};
 	System.out.println(nums[2][3]);//4
 	
-	
+	for (int r=0; r<nums.length; r++) {
+		for (int c=0; c<nums[r].length; c++) {
+			System.out.print(nums[r][c]+" ");
+		}
+	}
+	System.out.println();
 
 	
 	String month[][]= {
@@ -48,6 +53,28 @@ public class TwoDimensionalArrays {
 			{"March", "April","May"}
 };
 	System.out.println(month[0][2]);
-}
+
+	for (int i=0; i<month.length; i++) {
+		for (int y=0; y<month[i].length; y++) {
+			System.out.print(month[i][y]+" ");
+		}
+	}
+	System.out.println();
+	
+	
+	
+	
+	int [][] scores = {
+			{100, 80, 70, 75},
+			{65, 60, 55, 50, 45},
+			{40, 35, 30, 25, 20, 15}
+	};
+	
+	for (int row=0; row<scores.length; row--) {
+		for (int col=0; col<scores[row].length; col--) {
+			System.out.print(scores[row][col]+" ");
+		}
+	}
+	}
 
 	}
