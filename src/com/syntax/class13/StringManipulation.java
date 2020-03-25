@@ -1,5 +1,7 @@
 package com.syntax.class13;
 
+import java.util.Scanner;
+
 public class StringManipulation {
 
 	public static void main(String[] args) {
@@ -34,6 +36,22 @@ public class StringManipulation {
 		}
 
 		System.out.println("reverse is ->" + reverse);
+		
+		
+		System.out.println("-----------------s mode-------------");
+
+	    Scanner inp = new Scanner(System.in);
+	    System.out.print("In:");
+	    String s = inp.nextLine();
+	    //write your code below
+	    String upSideDown="";
+	    char[] charArray1= s.toCharArray();
+	    for (int i=charArray1.length-1; i>=0; i--){
+	            upSideDown+=charArray1[i];
+	}
+	      System.out.println (upSideDown);
+
+		
 		
 		int index = str.indexOf("llo");
 		System.out.println(index);

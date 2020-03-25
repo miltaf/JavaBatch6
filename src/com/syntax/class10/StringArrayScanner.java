@@ -10,7 +10,7 @@ public class StringArrayScanner {
 		name[2]="Mahmood";
 		
 		for (int i=0; i<name.length;i++) {
-			System.out.print(name[i]+", ");
+			System.out.println(name[i]+", ");
 		}
 		System.out.println();
 
