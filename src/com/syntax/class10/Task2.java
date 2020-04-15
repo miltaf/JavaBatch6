@@ -3,45 +3,22 @@ package com.syntax.class10;
 public class Task2 {
 
 	public static void main(String[] args) {
+		
+		int[] numbers = { 27, 43, 87, 322, 6, 32, 65, 85, 54, 7 };
+		int sum = 0;
 
-		String [] countries = {"USA", "Poland", "Ukraine", "Turkey", "Spain"};
-		for (String country: countries) {
-			
-			if (country.equals ("USA")) {
-				System.out.println("the capital of "+country+" is Washington");
-			} else if (country.equals ("Poland")) {
-				System.out.println("the capital of "+country + " Warsaw");
-			}else if (country.equals ("Ukrain")) {
-				System.out.println("the capital of "+country+ "Kiev");
-			}else if (country.equals("Turkey")) {
-				System.out.println("The capital of "+country+" is Ankara");
-			}else if (country.equals("Spain")) {
-				System.out.println("the capital of "+ country + " is Madrid");
-			}
-			}
-			
-			System.out.println("-------------2nd method------------");
-			
-			for (int y=0; y<countries.length; y++) {
-				switch (countries[y]) {
-				case "USA":
-					System.out.println("the capital of is Washington");
-				break;
-				case "Poland":
-				System.out.println("the capital is Warsaw");
-				break;
-				
-				case "Ukrain":
-					System.out.println("the capital is Kiev");
-				break;
-				case "Turkey":
-					System.out.println("The capital is Ankara");
-					break;
-				case "Spain":
-					System.out.println("The capital is Madrid");
-					break;
-				}
+		for (int i : numbers) {
+			sum += i;
+		}
+		System.out.println("The sum of the numbers in this array is :" + sum);
 
-			}
+		System.out.println("Using another loop ----------------------");
+	
+		int sum1=0;
+		for(int i=0; i< numbers.length; i++) {
+			sum1+=numbers[i];
+		}
+		System.out.println("The sum of the numbers in this array is :" + sum1);
+		
 	}
 }

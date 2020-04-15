@@ -4,65 +4,29 @@ public class Recap {
 
 	public static void main(String[] args) {
 		
-		String str="Good Morning Students!";
+		String str="";//empty value
+		System.out.println(str.isEmpty());
 		
-		System.out.println("----- charAt() FUNCTION -----");
-		char letter1=str.charAt(0);
-		System.out.println(letter1);
+		String str1=null;//no value at all
+		//System.out.println(str1.isEmpty());Runtime -> NullPointerException
+
+		String str2=" Good Morning ";
+		String str3="students";
+		String str4="!";
+		//" Good Morning "->"Good Morning"-->"Good Morningstudents"-->
+		str2=str2.         trim().            concat(str3).         
+				//--> "Good Morningstudents!"
+				concat(str4);
+		System.out.println(str2);
 		
-		char letter5=str.charAt(4);
-		System.out.println("Letter at index 4 is "+letter5+".");
-		
-//		char someLetter=str.charAt(55);// RunTime Exception --> StringIndexOutOfBoundsException
-//		System.out.println(someLetter);
-		
-		//get all characters 1 by 1 from a String?
-		char letter;
-		for(int i=0; i<str.length(); i++) {
-			
-			letter=str.charAt(i);
-			System.out.print(letter+" ");
-		}
-		System.out.println();
-		
-		System.out.println("----- indexOf() FUNCTION -----");
-		
-		String name="Syntax Technologies";
-		int index=name.indexOf("y");
-		System.out.println(index);	
-		
-		index=name.indexOf(" ");
-		System.out.println(index);
-		
-		index=name.indexOf("Syntax");
-		System.out.println(index);
-		
-		index=name.indexOf("!");
-		System.out.println("Index of not existing character="+index);
-		
-		index=name.indexOf("Technologies");
-		System.out.println("Index of substring Technologies="+index);
-		
-		index=name.indexOf("o");
-		System.out.println("Index of first o="+index);
-		
-		index=name.lastIndexOf("o");
-		System.out.println("Index of second o="+index);
-		
-	    String str1 = "abracadabra alakazam";
-	    String target1 = "dab";
-	    String target2 = "ABRA";
-	    
-	    int index0 = str1.indexOf("c");
-	    System.out.println (index0);
-	    
-	    int index1=str1.indexOf(" ");
-	    System.out.println(index1);
-	    
-	    int index2=target1.indexOf("dab");
-	    System.out.println(index2);
-	    
-	    int index3=target2.indexOf("ABRA");
-	    System.out.println(index3);
+		String str5="Day";
+		int date=25;
+		//str5.concat(date);CE:change type 
+		String str6=" Hello ";
+		String str7="Syntax";
+//		str6=str6.concat(str7).trim();
+//		System.out.println(str6);--> "Hello Syntax"
+		str6=str6.trim().concat(str7);
+		System.out.println(str6);//"HelloSyntax"
 	}
 }

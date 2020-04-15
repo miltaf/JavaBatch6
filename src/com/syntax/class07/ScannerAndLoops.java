@@ -5,30 +5,26 @@ import java.util.Scanner;
 public class ScannerAndLoops {
 
 	public static void main(String[] args) {
-	
-	// we want to ask user's name 5 time sand print 'Good Afternoon'+name times;
+
+		// we want to ask user's name 5 times and print Good Afternoon ___ 5 times
+
+		Scanner input;
+		String name = null;
+		int num = 1;
+
+		input = new Scanner(System.in);
+		while (num <= 3) {
+			System.out.println("What is your name");
+
+			name = input.nextLine();
+			System.out.println("Good afternoon " + name);
+
+			num++;
+		}
 		
-	Scanner input;
-	int num=1;
-	String name;
-	String name1;
-	String name2;
-	String name3;
-	String name4;
-
-	input = new Scanner (System.in);
-	
-	System.out.println("What are your names?");
-	name=input.nextLine();
-	name1=input.nextLine();
-	name2=input.nextLine();
-	name3=input.nextLine();
-	name4=input.nextLine();
-
-		while (num<=5) {
-		num++;
-		}	
-		System.out.println("Good afternoon "+name+", "+name1+", "+name2+", "+name3+", and "+name4);
+		//we are playing a lottery and a lucky number is 17;
+		//we want to keep asking user any number from 1-20 
+		//until he guess the lucky number --> congrats
+		// break from 1:45-2 pm
 	}
-
 }

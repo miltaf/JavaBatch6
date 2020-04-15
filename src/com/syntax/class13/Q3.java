@@ -3,10 +3,12 @@ package com.syntax.class13;
 public class Q3 {
 
 	public static void main(String[] args) {
-		/* write java program to print first 10 numbers of Fibbonacci series
-		 * the sum of previous two numbers is fibonacci
-		 *  0 1 1 2 3 5 8
+		
+		/*
+		 * Write JP to print first 10 numbers of Fibonacci series
+		 * 0 1 1 2 3 5 8
 		 */
+		
 		int a,b,c;
 		a=0;
 		b=1;
@@ -17,7 +19,6 @@ public class Q3 {
 			c=a+b;
 			a=b;
 			b=c;
-		
-	}
+		}
 	}
 }

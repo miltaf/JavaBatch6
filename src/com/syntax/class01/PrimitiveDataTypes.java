@@ -3,46 +3,22 @@ package com.syntax.class01;
 public class PrimitiveDataTypes {
 
 	public static void main(String[] args) {
-		// 8 primitive datatypes
+		//8 primitive datatypes
 		//to store whole numbers --> byte, short, int, long
-
-		byte variableOne=10;
-		
-		short variable2=100;
-		
-		int variableThree=33000;
-		
-		long variable_four=99990000;
-		
+		byte variableOne=127;
+		short variable2=32767;
+		int variableThree=1000;
+		int i=2000;
+		long variable_four=108878786867l;
 		//to store decimal numbers --> float, double
-		
-		float mrBean=12.99999f;
-		
-		double variableDouble=142.89;
-		
+		float variable$Five=99.9f;
+		double anyName=132.89888887655555;
 		//to store single character -> char
-		
 		char singleValue='F';
-		
 		char anotherVariable='%';
-		
-		//to store booleanv alues -> boolean
-		
+		//to store boolean values -> boolean
 		boolean hungry=true;
 		boolean thirsty=false;
-		
-		System.out.println(variable_four);
-		System.out.println(variableThree);
 		System.out.println(singleValue);
-		System.out.println(anotherVariable);
-		System.out.println(mrBean);
-		System.out.println(thirsty);
-		System.out.println(variableDouble);
-		
-		
-		
-		
-
 	}
-
 }

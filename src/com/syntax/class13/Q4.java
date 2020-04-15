@@ -19,5 +19,4 @@ public class Q4 {
 		System.out.println("Total words in string:"+myString+" = "+words);
 		
 	}
-
 }

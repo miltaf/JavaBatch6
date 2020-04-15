@@ -1,70 +1,61 @@
 package com.syntax.class06;
 
-import java.util.Scanner;
-
 public class SwitchIntro {
 
 	public static void main(String[] args) {
-Scanner scan = new Scanner (System.in);
-System.out.println("Please enter a number of the month");
-int month = 3;
-month=scan.nextInt();
-		
-		String monthName;
-	
-		
-		switch(month) {
-		
-		case 1: 
-			monthName="January";
-		break;
-		
-		case 2:
-			monthName="February";
-		break;
-		
-		case 3:
-			monthName="March";
-		break;
-		
-		case 4:
-			monthName="April";
-		break;
-		
-		case 5:
-			monthName="May";
-		break;
-		case 6:
-			monthName="June";
-		break;
-		
-		case 7:
-			monthName="July";
-		break;
 
-		case 8:
-			monthName="August";
-		break;
+		int day = 4;
+		String dayName;
 
-		case 9:
-			monthName="September";
-		break;
-
-		case 10:
-			monthName="October";
-		break;
-
-		case 11:
-			monthName="November";
-		break;
-
-		case 12:
-			monthName="December";
-		break;
-		default:
-			monthName="Invalid";
+		if (day == 1) {
+			dayName = "Monday";
+		}else if (day == 2) {
+			dayName = "Tuesday";
+		} else if (day == 3) {
+			dayName = "Wednesday";
+		} else if (day == 4) {
+			dayName = "Thursday";
+		} else if (day == 5) {
+			dayName = "Friday";
+		} else if (day == 6) {
+			dayName = "Saturday";
+		} else if (day == 7) {
+			dayName = "Sunday";
+		} else {
+			dayName = "Invalid";
 		}
-		System.out.println("This month is "+monthName);
-	}
 
+		System.out.println("Today is " + dayName);
+		System.out.println("---------------- USING SWITCH ------------");
+
+		String today; ///BREAK TILL 1:45
+		switch (day) {
+
+		case 1:
+			today = "Monday";
+			break;
+		case 2:
+			today = "Tuesday";
+			break;
+		case 3:
+			today = "Wednesday";
+			break;
+		case 4:
+			today = "Thursday";
+			break;
+		case 5:
+			today = "Friday";
+			break;
+		case 6:
+			today = "Saturday";
+			break;
+		case 7:
+			today = "Sunday";
+			break;
+		default:
+			today = "Invalid";
+		}
+
+		System.out.println("Today is " + today);
+	}
 }

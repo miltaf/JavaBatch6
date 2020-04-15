@@ -1,14 +1,16 @@
 package com.syntax.class01;
 
 public class Hello {
-public static void main (String[] args) {
-	// here you can write the comment on the below coding. Any comment we make should start with //
-	
-	/* this is used for multiple line comment
-	 * Every statement in Java must be starting with
-	 * 
-	 */
-	System.out.println("1000");
 
+	public static void main (String[] args) {
+		// this is single line comment
+		
+		/* this is multiline 
+		 * comment
+		 * 
+		 */
+		//line below will print Hello in console
+		System.out.println("Hello");
+	}
 }
-}
+
