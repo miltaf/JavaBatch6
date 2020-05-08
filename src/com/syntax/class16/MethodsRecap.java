@@ -17,7 +17,7 @@ public class MethodsRecap {
 	//create a method that will accept a String and return each word from a given String
 	String[] getWordsFromString(String str) {
 		String[] array=str.split(" ");
-		return array;
+		return array;St
 	}
 	
 	public static void main(String[] args) {
