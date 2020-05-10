@@ -17,12 +17,15 @@ public class ExceptionIntro {
 		System.out.println("End of the program");
 		
 		int[] array= {12,1,13};
-		//System.out.println(array[3]); --> ArrayIndexOutOfBoundsException
+	
+		for (int arr : array) {
+		System.out.println(array[2]);}// --> ArrayIndexOutOfBoundsException
 		
 		//System.out.println(str.length());--> NullPointerException
 		
 		NullPointerException npe=new NullPointerException();
 //		throw(npe);
+	    
 		
 		Thread.sleep(2000);
 		
